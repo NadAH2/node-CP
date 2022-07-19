@@ -1,0 +1,16 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "learnyounode",
+    "verify": "learnyounode verify"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "learnyounode": "^4.2.2",
+    "underscore": "^1.13.4"
+  }
+}

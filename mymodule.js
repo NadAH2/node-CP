@@ -1,0 +1,17 @@
+var fs = require("fs");
+var path = require("path");
+
+module.exports = function (directory, filterExt, callback) {
+  fs.readdir(directory, function (err, list) {
+    if (err) {
+      return callback(err);
+    } else {
+      list = list.filter(function (file) {
+        if (path.extname(file) === "." + filterExt) {
+          return true;
+        }
+      });
+      return callback(null, list);
+    }
+  });
+};
